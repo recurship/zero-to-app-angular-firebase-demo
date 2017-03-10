@@ -1,4 +1,54 @@
-<h1>
-  {{title}}
-</h1>
 <router-outlet></router-outlet>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Zwitter</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+  <h3>Welcome to Zwitter.</h3>
+
+  <button class="btn-login"></button>
+
+  <h4>Create a new Zweet</h4>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="input-group">
+        <input type="text" class="form-control" #tweetText>
+        <span class="input-group-btn">
+          <a class="btn btn-success">Zweet!</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+
+  <h4>Zweets</h4>
+  <div class="row">
+    <div class="col-md-4 zweet-card" *ngFor="let item of items">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <strong>mashhoodr:</strong> <br />
+          I am GDG Cloud Next Extended! #GDGCloudNext #Karachi<br />
+          <small>posted at 12/03/2017 12:30pm</small>
+          <div class="btn btn-danger btn-sm btn-remove">
+            <i class="glyphicon glyphicon-remove"></i>
+          </div>
+          <div class="btn btn-info btn-sm pull-right btn-like">
+            <div class="badge badge-like-count">4</div>
+            <i class="glyphicon glyphicon-thumbs-up"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
