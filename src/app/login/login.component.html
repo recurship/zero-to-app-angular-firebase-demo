@@ -1,0 +1,21 @@
+<div class="container">
+
+  <h3>Welcome to Zwitter.</h3>
+
+  <p>&nbsp;</p>
+
+  <div class="row">
+    <form class="col-md-4" #form="ngForm" novalidate>
+      <div class="form-group">
+        <label>Email address</label>
+        <input type="email" class="form-control" ngModel name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" ngModel name="password" required>
+      </div>
+      <button type="button" class="btn btn-default" (click)="signup(form)">Signup</button>
+      <button type="button" class="btn btn-primary" (click)="login(form)">Login</button>
+    </form>
+  </div>
+</div>

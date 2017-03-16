@@ -1,10 +1,16 @@
+import { LoginComponent } from './login/login.component';
+import { ZwitterComponent } from './zwitter/zwitter.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    children: []
+    component: ZwitterComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   }
 ];
 
