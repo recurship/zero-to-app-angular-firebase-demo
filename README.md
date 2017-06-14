@@ -1,5 +1,7 @@
 # Zwitter
 
+This is a demo app created for Zero to App talk. You can find the complete version in the branches
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
 
 ## Development server
