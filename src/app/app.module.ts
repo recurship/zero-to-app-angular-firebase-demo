@@ -11,6 +11,8 @@ import { LoginComponent } from './login/login.component';
 
 import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
 
+// NEED TO BE UPDATED USING YOUR ACCOUNT
+// ONES BELOW HAVE BEEN INVALIDATED
 export const firebaseConfig = {
   apiKey: 'AIzaSyDrlShh3TLtYTPOf2DNzVVMP5IZD2hoG4w',
   authDomain: 'zwitter-53bc9.firebaseapp.com',
